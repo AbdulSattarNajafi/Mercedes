@@ -1,0 +1,396 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@font-face {
+  src: url("./../assets/fonts/CAPro-Regular.otf");
+  font-family: ProArab;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  min-height: 100vh;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  font-weight: 400;
+  font-family: ProArab, sans-serif;
+  background-color: #f2f2f2;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#wrapper {
+  width: 100%;
+  max-width: 1300px;
+  margin: auto;
+  padding: 0 4rem;
+}
+
+.margin_bottom {
+  margin-bottom: .8rem;
+}
+
+.semibold {
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 2.4rem;
+  margin-bottom: 1.2rem;
+}
+
+header {
+  width: 100%;
+  background-color: #202020;
+}
+
+header ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+header ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: .6rem;
+}
+
+header ul li a {
+  display: block;
+  padding: .4rem 1rem;
+  font-size: 1.3rem;
+  color: gray;
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
+}
+
+header ul li a:hover {
+  color: #fff;
+}
+
+/*------Logo Container-------*/
+#logo_container {
+  width: 100%;
+  height: 140px;
+  background: #000000;
+}
+
+/*------Hero Section-------*/
+#hero {
+  width: 100%;
+  height: 470px;
+  background: url("./../images/Mercedes-Benz-Neutral-Star.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+/*------Links Container-------*/
+#links_container {
+  width: 100%;
+  padding: 1.2rem 0;
+  background: #202020;
+  margin-top: auto;
+}
+
+#links_container ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#links_container ul li {
+  display: block;
+  width: 200px;
+  padding: 0 .6rem;
+  text-align: center;
+}
+
+#links_container ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+#links_container ul li a span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#links_container ul li a .icon {
+  font-size: 2rem;
+  margin-bottom: .4rem;
+}
+
+#links_container ul .bordered_link {
+  position: relative;
+}
+
+#links_container ul .bordered_link::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 18px;
+  width: 1.5px;
+  height: 85%;
+  background: #fff;
+}
+
+#links_container ul .bordered_link::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 18px;
+  width: 1px;
+  height: 85%;
+  background: #fff;
+}
+
+/*---------Booking--------*/
+#booking {
+  padding: 2rem 0;
+  background: #fff;
+}
+
+/*---------Booking Information--------*/
+#booking_information {
+  padding: 2rem 0;
+  background: #f2f2f2;
+}
+
+#booking_information .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+#booking_information .container .car {
+  width: 50%;
+}
+
+#booking_information .container .booking {
+  width: 50%;
+}
+
+/*---------Our Help--------*/
+#our_help {
+  padding: 2rem 0;
+  background: #fff;
+}
+
+/*---------Social Icons--------*/
+#social_icons {
+  padding: 2rem 0 1.8rem 0;
+  background: #000000;
+}
+
+#social_icons .icons_container {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#social_icons .icons_container li {
+  margin-right: 2rem;
+}
+
+#social_icons .icons_container li:last-child {
+  margin-right: 0;
+}
+
+#social_icons .icons_container li a {
+  text-decoration: none;
+  font-size: 2rem;
+  color: #fff;
+}
+
+/*---------Footer--------*/
+footer {
+  border-top: 1.5px solid gray;
+}
+
+footer .terms {
+  padding: 2rem 0;
+  background: #000000;
+  color: gray;
+}
+
+footer .terms .link {
+  color: #0680b4;
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
+}
+
+footer .terms .link:hover {
+  color: #fff;
+}
+
+footer .copyrights {
+  padding: 1rem 0;
+  background: #202020;
+}
+
+footer .copyrights .copy_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .copyrights .copy_container .copy {
+  margin-right: 2rem;
+}
+
+footer .copyrights .copy_container .copy a {
+  text-decoration: none;
+  color: gray;
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
+}
+
+footer .copyrights .copy_container .copy a:hover {
+  color: #fff;
+}
+
+footer .copyrights .copy_container .statements .links_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .copyrights .copy_container .statements .links_container li {
+  padding: 0 1rem;
+}
+
+footer .copyrights .copy_container .statements .links_container li a {
+  display: block;
+  text-decoration: none;
+  color: gray;
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
+}
+
+footer .copyrights .copy_container .statements .links_container li a:hover {
+  color: #fff;
+}
+
+footer .copyrights .copy_container .statements .links_container .bordered_link {
+  position: relative;
+}
+
+footer .copyrights .copy_container .statements .links_container .bordered_link::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 4px;
+  width: 1.5px;
+  height: 70%;
+  background: gray;
+}
+
+footer .copyrights .copy_container .statements .links_container .bordered_link::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 4px;
+  width: 1.5px;
+  height: 70%;
+  background: gray;
+}
+
+@media (max-width: 991.98px) {
+  #wrapper {
+    padding: 0 3rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  #wrapper {
+    padding: 0 2rem;
+  }
+  h2 {
+    font-size: 2.2rem;
+  }
+  /*---------Booking Information--------*/
+  #booking_information .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #booking_information .container .car {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  #booking_information .container .booking {
+    width: 100%;
+  }
+  /*---------Social Icons--------*/
+  #social_icons .icons_container {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  /*---------Footer--------*/
+  footer .copyrights .copy_container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  footer .copyrights .copy_container .copy {
+    text-align: center;
+    margin-bottom: .6rem;
+  }
+  footer .copyrights .copy_container .statements .links_container {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (max-width: 575.98px) {
+  #wrapper {
+    padding: 0 1rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */

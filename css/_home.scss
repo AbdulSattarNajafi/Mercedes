@@ -1,0 +1,214 @@
+header{
+  width: 100%;
+  background-color: $light_black;
+  ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    li{
+      display: flex;
+      justify-content: center;
+      padding: .6rem;
+      a{
+        display: block;
+        padding: .4rem 1rem;
+        font-size: 1.3rem;
+        color: gray;
+        transition: all .4s ease;
+        &:hover{
+          color: $white;
+        }
+      }
+    }
+  }
+}
+/*------Logo Container-------*/
+#logo_container{
+  width: 100%;
+  height: 140px;
+  background: $black;
+}
+/*------Hero Section-------*/
+#hero{
+  width: 100%;
+  height: 470px;
+  background: url('./../images/Mercedes-Benz-Neutral-Star.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+/*------Links Container-------*/
+#links_container{
+  width: 100%;
+  padding: 1.2rem 0;
+  background: $light_black;
+  margin-top: auto;
+  ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    li{
+      display: block;
+      width: 200px;
+      padding: 0 .6rem;
+      text-align: center;
+      a{
+        text-decoration: none;
+        color: $white;
+        font-size: 1.2rem;
+        span{
+          display: flex;
+        flex-direction: column;
+        align-items: center;
+        }
+        .icon{
+          font-size: 2rem;
+          margin-bottom: .4rem;
+        }
+      }
+    }
+    .bordered_link{
+      position: relative;
+      &::before{
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 18px;
+        width: 1.5px;
+        height: 85%;
+        background: $white;
+      }
+      &::after{
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: 18px;
+        width: 1px;
+        height: 85%;
+        background: $white;
+      }
+    }
+  }
+}
+/*---------Booking--------*/
+#booking{
+  padding: 2rem 0;
+  background:$white;
+}
+/*---------Booking Information--------*/
+#booking_information{
+  padding: 2rem 0;
+  background: $light_gray;
+  .container{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    .car{
+      width: 50%;
+    }
+    .booking{
+      width: 50%;
+    }
+  }
+}
+/*---------Our Help--------*/
+#our_help{
+  padding: 2rem 0;
+  background: $white;
+}
+/*---------Social Icons--------*/
+#social_icons{
+  padding: 2rem 0 1.8rem 0;
+  background: $black;
+  .icons_container{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    li{
+      margin-right: 2rem;
+      &:last-child{
+        margin-right: 0;
+      }
+      a{
+        text-decoration: none;
+        font-size: 2rem;
+        color: $white;
+      }
+    }
+  }
+}
+/*---------Footer--------*/
+footer{
+  border-top: 1.5px solid gray;
+  .terms{
+    padding: 2rem 0;
+    background: $black;
+    color: gray;
+    .link{
+      color: $blue;
+      transition: all .4s ease;
+      &:hover{
+        color: $white;
+      }
+    }
+  }
+  .copyrights{
+    padding: 1rem 0;
+    background: $light_black;
+    .copy_container{
+      display: flex;
+      .copy{
+        margin-right: 2rem;
+        a{
+          text-decoration: none;
+          color: gray;
+          transition: all .4s ease;
+          &:hover{
+            color: $white;
+          }
+        }
+      }
+      .statements{
+        .links_container{
+          display: flex;
+          li{
+            padding: 0 1rem;
+            a{
+              display: block;
+              text-decoration: none;
+              color: gray;
+              transition: all .4s ease;
+              &:hover{
+                color: $white;
+              }
+            }
+          }
+          .bordered_link{
+            position: relative;
+            &::before{
+              content: "";
+              position: absolute;
+              left: 0;
+              bottom: 4px;
+              width: 1.5px;
+              height: 70%;
+              background: gray;
+            }
+            &::after{
+              content: "";
+              position: absolute;
+              right: 0;
+              bottom: 4px;
+              width: 1.5px;
+              height: 70%;
+              background: gray;
+            }
+          }
+        }
+      }
+    }
+  }
+}
